@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/jairo/Documents/appMinka/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml",
+            "map": [
+                {
+                    "source": "/home/jairo/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/55a114bf3e1d1b9c5ea4605f545cb116/res/values-gl/values-gl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/jairo/Documents/appMinka/C:\\Users\\jairo\\Documents\\Nube\\abBox\\Proyecto Bitco\\Bitco\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "map": [
+                {
+                    "source": "/home/jairo/Documents/appMinka/C:\\Users\\jairo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7a0f63891b9202dcbfaf0da4f2614ed1\\res\\values-gl\\values-gl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

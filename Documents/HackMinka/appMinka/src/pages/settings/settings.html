@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Mis Billeteras</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <h1 class="a">Saldo: {{valor}}</h1>
+
+    <ion-list radio-group [(ngModel)]="billeSelec" (ionChange)="onChangeHandler($event)">
+        <ion-list-header>
+          Billeteras
+        </ion-list-header>
+      
+        <ion-item>
+          <ion-label>Peso Colombiano (COP)</ion-label>
+          <ion-radio value="pesos"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Dólares (USD)</ion-label>
+          <ion-radio value="dolares"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Bitcoin (BTC)</ion-label>
+          <ion-radio value="bitcoin" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Kundacoin (KKC)</ion-label>
+            <ion-radio value="kundacoin" ></ion-radio>
+          </ion-item>
+      </ion-list>
+
+</ion-content>

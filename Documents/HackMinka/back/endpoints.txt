@@ -1,0 +1,42 @@
+/login (POST)
+    user
+    password
+    action
+
+{
+	"user_name" : "Don Usuario ",
+	"password" : "Contraseña ",
+	"action" : "Create Wallet"
+}
+
+-- ---------------------------------
+/create-wallet (POST)
+    handle
+    domain
+    type
+message:"Success"
+
+/get-wallet-balance (GET)
+    
+// ------ Data model: ---------- //
+
+User:
+  uuid (system key).
+  user_name
+  password
+  date_of_birth
+  wallet_id
+  
+
+// --------- Uses case: ---------- //
+
+General: In each app request:
+-- username
+-- password
+-- action: (access, create)
+
+Bitacore: Save all request in a database.
+
+// --------- Uses case: ---------- //
+
+

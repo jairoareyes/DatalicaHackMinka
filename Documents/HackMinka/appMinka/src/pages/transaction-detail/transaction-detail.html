@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalle de transacción</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item >
+    <img src={{item.imagen}}/>
+    <h1>{{item.valor}}</h1>
+    <p>Entidad: {{item.cliente}}</p>
+    <p>Fecha: {{item.fecha}}</p>
+    <p>Id transacción: {{item.validacion}}</p>
+    <p>Estado: {{item.estado}}</p>
+  </ion-item>
+</ion-content>

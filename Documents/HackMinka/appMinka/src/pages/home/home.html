@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      PAGAR
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+
+  <h1 class= "a">Balance: {{balance}} COP</h1>
+
+  <ion-list radio-group [(ngModel)]="opSelec" (ionChange)="onChangeHandler($event)">
+    <ion-list-header>
+      Opciones de pago
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Pago con código QR</ion-label>
+      <ion-radio value="qr"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Pago con Referencia de pago</ion-label>
+      <ion-radio value="ref"></ion-radio>
+    </ion-item>
+
+  <ion-item>
+    <ion-label>Pago a personas</ion-label>
+    <ion-radio value="persona"></ion-radio>
+  </ion-item>
+</ion-list>
+
+  <button *ngIf="opSelec=='qr'" ion-button full icon-left (click)="pagar()"><ion-icon name="barcode">
+  </ion-icon>Leer QR</button>
+
+
+    <ion-item *ngIf="opSelec=='ref'">
+      <ion-label  color="primary" floating>Referencia de pago</ion-label>
+      <ion-input type="number" [(ngModel)]="refer" >
+      </ion-input>
+    </ion-item>
+
+    <button *ngIf="opSelec=='ref'" ion-button full icon-left (click)="confirmar()"><ion-icon name="barcode">
+    </ion-icon>PAGAR</button>
+
+    <ion-item *ngIf="opSelec=='persona'" >
+      <ion-label color="primary" floating>Numero de Celular</ion-label>
+      <ion-input type="number" [(ngModel)]="refer" >
+      </ion-input>
+    </ion-item>
+
+    <button *ngIf="opSelec=='persona'" ion-button full icon-left (click)="pagar()"><ion-icon name="barcode">
+    </ion-icon>Transferir</button>
+
+</ion-content>
